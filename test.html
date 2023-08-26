@@ -512,9 +512,9 @@
     }
     .followtools a,.followtools a:visited{
         display:inline-block;
-        background:radial-gradient(ellipse at center,rgb(6, 6, 6) 0,hsla(60, 99%, 62%, 0.15) 150%);
-        box-shadow:0 0 6px rgb(251, 71, 51);
-        color:hsla(62, 98%, 63%, 0.9);
+        background:radial-gradient(ellipse at center,hsla(0, 100%, 62%,0.5) 0,hsla(60, 99%, 62%, 0.15) 150%);
+        box-shadow:0 0 6px hsla(200,100%,80%,1);
+        color:hsla(200,100%,90%,.9);
         border-radius:0;
         padding:7px;
         margin:4px;
@@ -1024,10 +1024,11 @@
         transition:opacity 2s ease
     }
     .changelog-new,.extrabutton{
+        .changelog-new,.extrabutton{
         text-align:left;
         width:18vw;
         border:0;
-        background:linear-gradient(-45deg,hsla(0, 100%, 62%, 0.5) 0,hsla(60, 99%, 62%, 0.15) 100%);
+        background:linear-gradient(-45deg,hsla(0,100%,62%,0.5) 0,hsla(60, 99%, 66%, 0.15) 100%);
         padding:5px 10px;
         box-shadow:0 0 6px hsla(200,100%,80%,1);
         font-size:.95vw;
@@ -17671,7 +17672,7 @@
                     case "seasonal":
                         this.icon = "https://starblast.io/ecp/seasonal.png";
                         break;
-                    case "omega":
+                    case "omega_gg":
                         this.icon = "https://raw.githubusercontent.com/omega10000/Upercase/main/hhhmm.png";
                         break;
                     case "trophy":
@@ -17883,7 +17884,7 @@
                     medic: "Medic",
                     blank: "Blank",
                     seasonal: "Seasonal",
-                    omega: "omega",
+                    omega_gg: "omega_gg",
                     speed: "speed",
                     trophy: "trophy",
                     gg1: "gg1",
