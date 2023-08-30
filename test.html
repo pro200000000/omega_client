@@ -358,10 +358,10 @@
     }
     a{
         text-decoration:none;
-        color:hsl(0, 83%, 51%)
+        color:hsl(200,50%,80%)
     }
     a:visited{
-        color:hsl(130, 85%, 50%)
+        color:hsl(200,50%,60%)
     }
     .grayblur{
         -moz-filter:grayscale(0.5) blur(3px);
@@ -381,10 +381,10 @@
         z-index:2;
         text-align:center;
         font-size:2em;
-        color:#ec0a0a;
-        text-shadow:0 0 3px #e8e40a,0 0 3px #1582d3,0 0 3px #000,0 0 3px #000;
+        color:#EEE;
+        text-shadow:0 0 3px #000,0 0 3px #000,0 0 3px #000,0 0 3px #000;
         transition:opacity .5s ease;
-        box-shadow:0 0 6px rgb(6, 93, 208);
+        box-shadow:0 0 6px hsla(200,80%,80%,1);
         text-shadow:0 0 2px hsla(200,80%,80%,.3);
         color:hsla(200,90%,90%,.8)
     }
@@ -510,32 +510,12 @@
         text-align:left;
         z-index:1
     }
-    
-    #moddingspace {
-        background: url("https://raw.githubusercontent.com/omega10000/Upercase/main/omega.gif")
-          center center / cover;
-        border-radius: 5% / 60%;
-      }
-
-      #donate {
-        background: url("https://raw.githubusercontent.com/officialtroller/snti/main/fireanimation.gif")
-          center top / cover;
-        border-radius: 5% / 60%;
-      }
-
-      #rankings {
-        background: url("https://raw.githubusercontent.com/officialtroller/snti/main/fireanimation.gif")
-          center bottom / cover;
-        border-radius: 5% / 60%;
-      }
-
     .followtools a,.followtools a:visited{
         display:inline-block;
-        background:radial-gradient(ellipse at center,hsla(0, 100%, 62%,0.5) 0,hsla(60, 99%, 62%, 0.15) 150%);
+        background:radial-gradient(ellipse at center,hsla(0, 100%, 62%, 0.5) 0,hsla(60, 99%, 62%, 0.15) 150%);
         box-shadow:0 0 6px hsla(200,100%,80%,1);
         color:hsla(200,100%,90%,.9);
         border-radius:50px;
-        cursor: pointer;
         padding:7px;
         margin:4px;
         position:relative
@@ -607,8 +587,7 @@
         border-radius:50px;
         text-align:center;
         cursor:pointer;
-        background: url("https://raw.githubusercontent.com/omega10000/Upercase/main/omega.gif")
-        center bottom;
+        background:radial-gradient(ellipse at center,hsla(0, 100%,62%, 0.5) 0,hsla(60, 99%,62%, 0.15) 150%);
         box-shadow:0 0 6px hsla(200,100%,80%,1);
         text-shadow:0 0 7px hsla(200,100%,80%,1);
         color:hsla(200,100%,90%,.8)
@@ -640,7 +619,7 @@
     }
     .inputwrapper{
         display:inline-block;
-        background:linear-gradient(to top,hsla(1, 70%, 36%, 0.5) 0,hsla(0, 54%, 38%,1) 20%,hsla(0, 51%, 44%,1) 60%,hsla(1, 100%, 54%, 0.5) 100%);
+        background:linear-gradient(to top,hsla(1, 70%, 36%, 0.5) 0,hsla(0, 54%, 38%,1) 20%,hsla(0,51%,44%,1) 60%,hsla(1,100%,54%,0.5) 100%);
         box-shadow:0 0 6px hsla(200,80%,80%,1);
         text-shadow:0 0 7px hsla(200,80%,80%,1);
         border-radius:50px;
@@ -753,13 +732,12 @@
         cursor:pointer;
         margin:20px 0 20px 0;
         text-align:center;
-        background:url("https://raw.githubusercontent.com/omega10000/Upercase/main/omega.gif")
-        center bottom;
+        background:radial-gradient(ellipse at center,hsla(0, 100%, 62%, 0.5) 0,hsla(60, 99%, 62%, 0.15) 150%);
         box-shadow:0 0 6px hsla(200,100%,80%,1);
         text-shadow:0 0 7px hsla(200,100%,80%,1);
         color:hsla(200,100%,90%,.8);
         font-family:Play,Verdana;
-        border-radius:50px
+        border-radius:50px;
     }
     #player button:hover,#respawn_actions button:hover,.donate-btn:hover,.ecpbtn:hover{
         background:radial-gradient(ellipse at center,hsla(200,50%,0%,1) 0,hsla(200,100%,70%,.5) 100%);
@@ -789,8 +767,7 @@
     }
     #play.orange{
         color:#FFF;
-        background:url("https://raw.githubusercontent.com/omega10000/Upercase/main/omega.gif")
-        center center;
+        background:radial-gradient(ellipse at center,hsla(20,50%,0%,1) 0,hsla(20,100%,70%,.5) 150%);
         text-shadow:0 0 7px hsla(20,100%,80%,1);
         box-shadow:0 0 6px hsla(20,100%,80%,1)
     }
@@ -891,7 +868,7 @@
         width:90%;
         margin:0 auto;
         height:25px;
-        background:linear-gradient(to bottom,#000 0,#444 49%,#ff0000 5rgb(255, 248, 59)000 100%);
+        background:linear-gradient(to bottom,#000 0,#444 49%,#222 50%,#000 100%);
         border:2px solid hsla(200,100%,70%,.8);
         box-shadow:0 0 10px hsla(200,100%,80%,1);
         border-radius:4px
@@ -973,8 +950,8 @@
         position:absolute;
         top:1vw;
         display:inline-block;
-        border:1px solid #f11717;
-        background:#ffd500;
+        border:1px solid #999;
+        background:#EEE;
         width:8vw;
         height:12vw;
         border-radius:2vw
@@ -984,7 +961,7 @@
         height:4vw;
         line-height:4vw;
         margin:0 auto;
-        border-bottom:3px solid #ff0c0c;
+        border-bottom:3px solid #999;
         font-size:2.5vw
     }
     .mouse-left{
@@ -997,7 +974,7 @@
     }
     [class^="kb-"]{
         display:inline-block;
-        border:1px solid #ff4040;
+        border:1px solid #999;
         background:#EEE;
         border-radius:.4vw;
         height:3vw;
@@ -1046,22 +1023,11 @@
         opacity:0;
         transition:opacity 2s ease
     }
-    div[data-translate-base="music"] {
-        background: url("https://raw.githubusercontent.com/omega10000/Upercase/main/omega.gif")
-          center top;
-        border-radius: 5% / 60%;
-      }
-
-      div[data-translate-base="community"] {
-        background: url("https://raw.githubusercontent.com/omega10000/Upercase/main/omega.gif")
-          center bottom;
-        border-radius: 5% / 60%;
-      }
     .changelog-new,.extrabutton{
         text-align:left;
         width:18vw;
         border-radius:30px;
-        background:linear-gradient(-45deg,hsla(0,100%,62%,0.5) 0,hsla(60, 99%, 66%, 0.15) 100%);
+        background:linear-gradient(-45deg,hsla(0, 100%, 62%, 0.5) 0,hsla(60, 99%, 62%, 0.15) 100%);
         padding:5px 10px;
         box-shadow:0 0 6px hsla(200,100%,80%,1);
         font-size:.95vw;
@@ -1225,7 +1191,7 @@
         width:800px;
         max-width:100%;
         max-height:100%;
-        background:linear-gradient(135deg,hsla(00, 100%, 62%, 0.5) 0,hsla(60, 99%, 62%, 0.15) 150%);
+        background:linear-gradient(135deg,hsla(0, 100%, 62%, 0.5) 0,hsla(60, 99%, 62%, 0.15) 150%);
         transition:top .6s ease;
         display:none;
         overflow:auto;
@@ -1572,7 +1538,7 @@
         box-shadow:0 0 6px hsla(200,100%,80%,1)
     }
     .frozenbg,.frozenbg:visited{
-        background:radial-gradient(ellipse at center,hsla(0, 100%, 61%, 0.5) 20%,hsla(60, 99%, 62%, 0.15) 150%);
+        background:radial-gradient(ellipse at center,hsla(0, 100%, 62%, 0.5) 20%,hsla(60, 99%, 62%, 0.15) 150%);
         box-shadow:0 0 6px hsla(200,100%,80%,1);
         text-shadow:0 0 7px hsla(200,100%,80%,1);
         color:hsla(200,100%,90%,.8)
@@ -2076,7 +2042,7 @@
             <form id="player" class="hide">
                 <div class="inputwrapper">
                     <div class="colorwrapper"><span class="colorchosen"></span></div>
-                    <input tabindex="0" type="text" maxlength="16" data-translate-placeholder="GG Omega">
+                    <input tabindex="0" type="text" maxlength="16" data-translate-placeholder="Your commander name">
                 </div>
                 <div id="colors" style="display:none;"></div>
                 <div class="playbtn noselect">
@@ -2171,10 +2137,10 @@
         <div class="bottom-left">
             <div class="changelog-new" data-translate-base="changelog_new" lang="en">
               <div>
-                <h2 style="text-align:center"><i class="fa fa-star"></i> Omega Client <i class="fa fa-star"></i></h2>
+                <h2 style="text-align:center"><i class="fa fa-star"></i> Starblast Returns <i class="fa fa-star"></i></h2>
                 <p>
-                  Emotes, Badgets, Fontcolour...
-                 </p>
+                  Secondaries and healing are back in team mode! We hope you liked the temporary event.
+        </p>
                 <p style="text-align:center;">
                   <a target="_blank" href="https://starblast-shipyard.github.io/" alt="Loveship shipyard" style="text-decoration: underline">Starblast Shipyard</a>
                 </p>
@@ -2203,13 +2169,13 @@
             </div>
             <div class="textcentered community changelog-new" data-translate-base="community" lang="en">
               <a href="https://www.reddit.com/r/Starblastio/" target="_blank"><i class="sbg sbg-reddit"></i><br>Reddit</a>
-              <a href="https://discord.gg/xpJNmcdc" target="_blank"><i class="sbg sbg-discord"></i><br>Discord</a>
+              <a href="https://discord.gg/JwfJSFmXtn" target="_blank"><i class="sbg sbg-discord"></i><br>Discord</a>
               <a href="https://starblastio.gamepedia.com" target="_blank"><i class="sbg sbg-wiki"></i><br>Wiki</a>
               <a href="https://www.redbubble.com/fr/people/neuronality/collections/925374-starblast" target="_blank"><i class="sbg sbg-gift"></i><br>Merch</a>
             </div>
             <div class="textcentered community changelog-new" data-translate-base="community" lang="fr">
               <a href="https://www.reddit.com/r/Starblastio/" target="_blank"><i class="sbg sbg-reddit"></i><br>Reddit</a>
-              <a href="https://discord.gg/xpJNmcdc" target="_blank"><i class="sbg sbg-discord"></i><br>Discord</a>
+              <a href="https://discord.gg/JwfJSFmXtn" target="_blank"><i class="sbg sbg-discord"></i><br>Discord</a>
               <a href="https://starblastio.gamepedia.com" target="_blank"><i class="sbg sbg-wiki"></i><br>Wiki</a>
               <a href="https://www.redbubble.com/fr/people/neuronality/collections/925374-starblast" target="_blank"><i class="sbg sbg-gift"></i><br>Boutique</a>
             </div>
@@ -14883,7 +14849,7 @@
                                 return 0
                             }
                         }(this),
-                        time: 1,
+                        time: 3,
                         achievement: t("Secondary Weapons")
                     },
                     mouse: {
@@ -17445,7 +17411,7 @@
                 }(this))()
             }, e.prototype.lO1l0 = function(t) {
                 var e, i;
-                return null == t && (t = 1.25), e = document.createElement("canvas"), i = new Image, i.src = "https://raw.githubusercontent.com/omega10000/Upercase/main/Screenshot_2023-08-26_173829-removebg-preview.png", i.crossOrigin = "Anonymous", i.ondragstart = function(t) {
+                return null == t && (t = 1.25), e = document.createElement("canvas"), i = new Image, i.src = "https://raw.githubusercontent.com/omega10000/Upercase/main/omega.gif", i.crossOrigin = "Anonymous", i.ondragstart = function(t) {
                     return t.preventDefault()
                 }, i.addEventListener("dragstart", function(t) {
                     return t.preventDefault()
@@ -17705,7 +17671,7 @@
                     case "seasonal":
                         this.icon = "https://starblast.io/ecp/seasonal.png";
                         break;
-                    case "omega_gg":
+                    case "omega":
                         this.icon = "https://raw.githubusercontent.com/omega10000/Upercase/main/hhhmm.png";
                         break;
                     case "trophy":
@@ -17917,7 +17883,7 @@
                     medic: "Medic",
                     blank: "Blank",
                     seasonal: "Seasonal",
-                    omega_gg: "omega_gg",
+                    omega: "omega",
                     speed: "speed",
                     trophy: "trophy",
                     gg1: "gg1",
@@ -32827,6 +32793,7 @@
                         zh: "阿拉伯语",
                         "zh-tw": "阿拉伯語",
                         lt: "Arabų",
+                        az: "Ərəbcə",
                         th: "อาหรับ",
                         ko: "아라비아어",
                         fa: "عربی",
